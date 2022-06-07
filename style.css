@@ -6,6 +6,7 @@
     margin:0px;
     padding:0px;
     color:#000;
+        
 }
 
 .intro_bg{
@@ -64,6 +65,7 @@
 }
 
 .where{
+
     text-align: center;
     display:flex;
     width: 800px;
@@ -77,11 +79,19 @@
     border-radius: 10px;
     background:rgba(255, 255, 255, 0.7);
     box-shadow: 0px 0px 10px rgba(0,0,0.1);
+    width: auto;
+    height: auto;
 }
+
 
 .where > li > a{
     font-size:30px;
     color:rgba(0,0,0,1);
+}
+
+.where > li > a > i{
+    font-size: 50px;
+    color: blue;
 }
 
 .contents1{
@@ -120,6 +130,10 @@
     margin-top:49px;
     height:202px;
     text-align: center;
+    border-top-style:ridge;
+    border-bottom-style:ridge;
+    border-left-style:ridge;
+    border-right-style:ridge;
 }
 
 .icons > li:not(:last-child){
