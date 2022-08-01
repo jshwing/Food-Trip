@@ -2,20 +2,18 @@
 <html lang="ko"
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-       
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://kit.fontawesome.com/ecae67d4f9.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>#1</title>
     </head>
     <body>
         <div class="wrap">
             <div class="intro_bg">
                 <div class="header" id="link_header">
-                    <div class="searchArea">
-                        <form>
-                            <input type="search" placeholder="Search">
-                            <span>검색</span>
-                        </form>
-                    </div>
+    
                     <ul class="nav">
                         <li><a href="#link_header">HOME</a></li>
                         <li><a href="#link_main_text0">CATEGORY</a></li>
@@ -23,13 +21,21 @@
                         <li><a href="#link_main_text2">CONTACT</a></li>
                     </ul>
                 </div>
-                <ul class="where">
-                    <li><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
-                   
-                </ul>
+                <div class="wrapper">
+                    <header>Plan</header>
+                    <div class="searchArea">
+                        <input type="text" placeholder="Add your new plan">
+                        <button><i class="fas fa-plus"></i></button>
+                    </div>
+                    <ul class="planlist">
+                        <!-- Data comes from local storage -->
+                    </ul>
+                    <div class="footer">
+                        <span>Plan <span class="pendingNumb"></span> delete</span>
+                        <button>Clear All</button>
+                    </div>
+                </div>
+                <script src="script.js"></script>
                 <div class="main_text0" id="link_main_text0">
                     <h1>CATEGORY</h1>
                     <div class="contents1">아무말이나 쓰시오 테스트테스트^_^</div>
