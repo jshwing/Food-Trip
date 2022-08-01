@@ -1,0 +1,94 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+}
+
+.intro_bg {
+    background-image: url("image/여행배경.jpg");
+    width: 100%;
+    height: 1080px;
+    opacity: 0.8;
+    
+}
+
+.title  {
+    width: 300x;
+    height: 60px;
+    
+    margin-top: 12px;
+    margin-left: 24px;
+    padding-left: 12px;
+    
+}
+
+.title > img {
+    width: 80px;
+}
+
+.title > div {
+    font-size: 25px;
+    margin-left: 17px;
+    line-height: 10px;
+
+}
+
+.header {
+    display: flex;
+    width: 1280px;
+    height: 86px;
+    
+}
+
+
+
+.nav {
+    display: flex;
+    width: calc(1280px - 60px);
+    
+    justify-content: flex-end;
+    line-height: 86px;
+    
+}
+
+.nav > li {
+    margin-left: 84px;
+}
+
+.nav > li > a {
+    color: white;
+ }
+
+ .center  {
+     position: absolute;
+     top: 25%;
+     left: 45%;
+     transform: translate(-25%, -45%);
+     background:rgba(236, 232, 232, 0.8);
+     padding: 5px;
+     border-radius: 5px;
+     
+ }
+ .center > form {
+     background: rgba(0, 0, 0, 0.0);
+ }
+ .center > form > input {
+     border:none;
+     width:250px;
+     height: 40px;
+     background:rgba(0,0,0,0.0);
+     color: #000;
+     padding-left: 10px;
+ }
+
+ .center > form > span {
+     width: 50px;
+     color:rgba(0,0,0,1);
+     font-weight: bold;
+     cursor: pointer;
+     margin-right: 5px;
+ }
