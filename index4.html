@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styleindex.css">
+    <script src="https://kit.fontawesome.com/ecae67d4f9.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="wrap">
+    <div class="intro_bg">
+        <div class="header" id="link_header">
+            <ul class="nav">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="home.html#link_main_text0">CATEGORY</a></li>
+                <li><a href="home.html#link_main_text1">MAP</a></li>
+                <li><a href="home.html#link_main_text2">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <header>Plan</header>
+            <div class="searchArea">
+                <input type="text" placeholder="Add your new plan">
+                <button><i class="fas fa-plus"></i></button>
+            </div>
+            <ul class="planlist">
+                <!-- Data comes from local storage -->
+            </ul>
+            <div class="footer">
+                <span>Plan <span class="pendingNumb"></span> delete</span>
+                <button>Clear All</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        
+
+        <div class="bg">
+            <p id="data" class="data"></p>
+            <script>
+                const url = 'https://api.odcloud.kr/api/3082925/v1/uddi:7c291067-a956-4811-a9ec-942b6979ff77_201709270816?page=4&perPage=10&serviceKey=fvjg4z39OwEOT5LeYwzxUnQvgkzZvMXrUydyum8xZVvWxefy5u6gX4TqvQZDiNYXVhzx7WSKsAjw4Zfa%2B%2B3Oyg%3D%3D';
+
+                fetch(url)
+                    .then(res => res.json())
+                    .then(myJson => {
+
+                        var innerT = '';
+                        for (let i = 0; i < myJson['data'].length; i++) {
+                            innerT += `<div>상 호 : ${myJson['data'][i]['상 호']}</div>`;
+                            innerT += `<div>소재지 : ${myJson['data'][i]['소재지']}</div>`;
+                            innerT += `<div>연락처 : ${myJson['data'][i]['연락처']}</div>`;
+                            innerT += `<div>주메뉴 : ${myJson['data'][i]['주메뉴']}</div><br>`;
+                            
+                            console.log(myJson['data'][i]['상 호']);
+                            console.log(myJson['data'][i]['소재지']);
+                            console.log(myJson['data'][i]['연락처']);
+                            console.log(myJson['data'][i]['주메뉴']);
+                        }
+
+                        document.getElementById('data').innerHTML =innerT;
+                        
+                    })
+            </script>
+        </div>
+        <ul class="nav1">
+            <li><a href="index.html">1</a></li>
+            <li><a href="index2.html">2</a></li>
+            <li><a href="index3.html">3</a></li>
+            <li><a href="index4.html">4</a></li>
+            <li><a href="index5.html">5</a></li>
+            <li><a href="index6.html">6</a></li>
+            <li><a href="index7.html">7</a></li>
+            <li><a href="index8.html">8</a></li>
+            <li><a href="index9.html">9</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>
